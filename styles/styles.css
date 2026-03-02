@@ -842,5 +842,133 @@ canvas {
   .controls .control {
     margin: 1rem 0.3rem;
   }
+
+  /* -----------------------------
+   HEADER MOBILE STACK
+------------------------------*/
+
+@media (max-width: 992px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-header {
+    margin-bottom: 30px;
+  }
+
+  .right-header h6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .right-header p {
+    font-size: 0.95rem;
+  }
+
+  canvas {
+    width: 260px !important;
+    height: 260px !important;
+  }
+}
+
+/* -----------------------------
+   MOBILE NAVIGATION
+------------------------------*/
+
+@media (max-width: 768px) {
+  .controls {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #111;
+    border-top: 1px solid #222;
+    z-index: 999;
+  }
+
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .control i {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  body {
+    padding-bottom: 80px;
+  }
+}
+
+/* -----------------------------
+   PORTFOLIO MOBILE FIX
+------------------------------*/
+
+@media (max-width: 768px) {
+  .hover-item {
+    opacity: 1 !important;
+    position: relative;
+    transform: none !important;
+  }
+
+  .portfolio-item {
+    margin-bottom: 25px;
+  }
+
+  .hover-item h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .i-c-2 {
+    flex-direction: column;
+  }
+
+  .i-c-2 input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-content-container {
+    flex-direction: column;
+  }
+}
+/* -----------------------------
+   MOBILE GAME CONTROLS
+------------------------------*/
+
+.mobile-controls {
+  display: none;
+  margin-top: 15px;
+}
+
+.mobile-controls button {
+  background: #00ff66;
+  border: none;
+  padding: 10px 14px;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobile-controls {
+    display: block;
+  }
+}
 }/*# sourceMappingURL=styles.css.map */
 
