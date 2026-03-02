@@ -75,12 +75,6 @@ document.addEventListener("keydown", (e) => {
 
   if (!gameStarted && e.key === "Enter") {
     startGame();
-
-    canvas.addEventListener("click", () => {
-  if (!gameStarted) {
-    startGame();
-  }
-});
 }
 
   if (gameStarted) {
@@ -167,27 +161,4 @@ function draw() {
 
   snake.unshift(newHead);
 
-  let touchStartX = 0;
-let touchStartY = 0;
-
-canvas.addEventListener("touchstart", (e) => {
-  touchStartX = e.touches[0].clientX;
-  touchStartY = e.touches[0].clientY;
-});
-
-canvas.addEventListener("touchend", (e) => {
-  let touchEndX = e.changedTouches[0].clientX;
-  let touchEndY = e.changedTouches[0].clientY;
-
-  let dx = touchEndX - touchStartX;
-  let dy = touchEndY - touchStartY;
-
-  if (Math.abs(dx) > Math.abs(dy)) {
-    if (dx > 0 && direction !== "LEFT") direction = "RIGHT";
-    if (dx < 0 && direction !== "RIGHT") direction = "LEFT";
-  } else {
-    if (dy > 0 && direction !== "UP") direction = "DOWN";
-    if (dy < 0 && direction !== "DOWN") direction = "UP";
-  }
-});
 }

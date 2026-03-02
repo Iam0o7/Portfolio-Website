@@ -949,26 +949,5 @@ canvas {
 /* -----------------------------
    MOBILE GAME CONTROLS
 ------------------------------*/
-
-.mobile-controls {
-  display: none;
-  margin-top: 15px;
-}
-
-.mobile-controls button {
-  background: #00ff66;
-  border: none;
-  padding: 10px 14px;
-  margin: 5px;
-  font-size: 18px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .mobile-controls {
-    display: block;
-  }
-}
 }/*# sourceMappingURL=styles.css.map */
 
